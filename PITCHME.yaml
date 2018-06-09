@@ -2,3 +2,4 @@ theme : moon
 layout : top-left
 background : resources/nightsky.jpeg
 highlight : darkula
+theme-override : resources/css/PITCHME.css

@@ -8,3 +8,7 @@
     margin-left: 10;
     margin-right: 10;
 }
+
+.reveal code {
+    color: coral;
+}

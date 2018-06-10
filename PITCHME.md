@@ -20,12 +20,19 @@ A quick introduction to Akka Typed
 @ul
                                     
 - AKKA Actors first public release in January 2010: Akka 0.5
-- Actors implement a (partial) receive function (`Any ==> Unit`)                                                                      
+- Actors implement a (partial) receive function (`Any => Unit`)                                                                      
 - Changing state is done by updating internal var/vals and `become`ing a new actor that reacts differently to future incoming messages
+
+@ulend
+
++++
+### Actor systems (continued)
+@ul
 
 - Drawbacks of the untyped nature of AKKA Actors
     - No clear interface (what messages will be digested, what messages can be emitted)
     - Multiple behaviours hidden behind same interface (`become` is not visible to the world outside the actor)
+- No compile time assistance on correctness
 - Reasoning about large actor systems becomes difficult
 
 @ulend
@@ -35,12 +42,11 @@ A quick introduction to Akka Typed
 
 @ul
 
-- AKKA Actor Systems have been around for a while (first public release in January 2010: Akka 0.5)                                    
-- Effective abstraction of units of computation that can be distributed across multiple environments                                  
-- Interaction between actors is limited to sending messages                                                                           
-- Actors implement a (partial) receive function (`Any ==> Unit`)                                                                      
-- Actors react to messages by changing their internal state and (optionally) sending a limited number of messages to other actors     
-- Changing state is done by updating internal var/vals and `become`ing a new actor that reacts differently to future incoming messages
+- Akka Typed tries to remove the drawbacks
+- While keeping the high performance
+- And providing interoperability
+    - Typed Actors can interact with Untyped Actors and vv
+    - Typed Actor Systems can be used as Untyped Actor Systems
 
 @ulend
 

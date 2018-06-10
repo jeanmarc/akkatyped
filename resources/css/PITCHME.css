@@ -3,3 +3,8 @@
     width: 120%;
     margin-left: -10%;
 }
+
+.reveal .slides section>* {
+    margin-left: 10;
+    margin-right: 10;
+}

@@ -2,6 +2,35 @@
 A quick introduction to Akka Typed
 
 ---
+### Actor systems
+@ul
+
+- Actor systems have been around since the mid 1970s
+- Effective abstraction of units of computation that can be distributed across multiple environments                                  
+- Interaction between actors is limited to sending messages
+- Processing of messages consists of:
+    - sending limited number of (other) messages
+    - update internal state
+    - optionally terminate                                                                           
+
+@ulend
+
++++
+### Actor systems (continued)
+@ul
+                                    
+- AKKA Actors first public release in January 2010: Akka 0.5
+- Actors implement a (partial) receive function (`Any ==> Unit`)                                                                      
+- Changing state is done by updating internal var/vals and `become`ing a new actor that reacts differently to future incoming messages
+
+- Drawbacks of the untyped nature of AKKA Actors
+    - No clear interface (what messages will be digested, what messages can be emitted)
+    - Multiple behaviours hidden behind same interface (`become` is not visible to the world outside the actor)
+- Reasoning about large actor systems becomes difficult
+
+@ulend
+
+---
 ### The next generation of Actor Systems
 
 @ul

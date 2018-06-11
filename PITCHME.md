@@ -53,12 +53,7 @@ A quick introduction to Akka Typed
 ---
 ### Adding it to your project
 
-```scala
-libraryDependencies += 
-    "com.typesafe.akka" %% "akka-actor-typed" % "2.5.13"
-``` 
-
----?code=project/Dependencies.scala
+?code=project/Dependencies.scala
 @[4-5]
 
 ---

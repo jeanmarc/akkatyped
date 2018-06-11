@@ -45,7 +45,7 @@ A quick introduction to Akka Typed
 - Akka Typed tries to remove the drawbacks
 - While keeping the high performance
 - And providing interoperability
-    - Typed Actors can interact with Untyped Actors and vv
+    - Typed Actors can interact with Untyped Actors and the other way too
     - Typed Actor Systems can be used as Untyped Actor Systems
 
 @ulend

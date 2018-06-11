@@ -52,6 +52,7 @@ A quick introduction to Akka Typed
 
 ---
 ### Show me the code
+The following pages show the working examples.
 
 +++?code=project/Dependencies.scala&title=Adding dependency
 @[4-5]

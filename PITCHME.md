@@ -58,6 +58,9 @@ libraryDependencies +=
     "com.typesafe.akka" %% "akka-actor-typed" % "2.5.13"
 ``` 
 
+---?code=project/Dependencies.scala
+@[4-5]
+
 ---
 ### Attributions
 This presentation was created using the following resources:

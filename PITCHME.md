@@ -52,7 +52,7 @@ A quick introduction to Akka Typed
 
 
 ---?code=project/Dependencies.scala
-@title[Adding it to your project]
+### Adding it to your project
 @[4-5]
 
 ---

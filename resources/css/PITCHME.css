@@ -1,6 +1,6 @@
 
 .reveal pre {
-    width: 90%;
+    width: 100%;
 }
 
 .reveal .slides section>* {
@@ -9,5 +9,5 @@
 }
 
 .reveal code {
-    color: coral;
+    font-size: 80%;
 }

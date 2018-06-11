@@ -62,7 +62,7 @@ The following pages show the working examples.
 
 +++?code=src/main/scala/FirstSteps.scala&title=A simple example
 
-+++?code=src/main/scala/ChatRoom.scala&title=ChatRoom
+---?code=src/main/scala/ChatRoom.scala&title=ChatRoom
 
 ---
 ### Attributions

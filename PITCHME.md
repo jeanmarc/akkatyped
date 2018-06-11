@@ -1,7 +1,8 @@
 # Akka Typed Introduction
 A quick introduction to Akka Typed
 
----?title=Actor systems
+---
+### Actor systems
 @ul
 
 - Actor systems have been around since the mid 1970s
@@ -14,7 +15,8 @@ A quick introduction to Akka Typed
 
 @ulend
 
-+++?title=Actor systems (continued)
++++
+### Actor systems (continued)
 @ul
                                     
 - AKKA Actors first public release in January 2010: Akka 0.5
@@ -23,7 +25,8 @@ A quick introduction to Akka Typed
 
 @ulend
 
-+++?title=Actor systems (continued)
++++
+### Actor systems (continued)
 @ul
 
 - Drawbacks of the untyped nature of AKKA Actors
@@ -34,7 +37,8 @@ A quick introduction to Akka Typed
 
 @ulend
 
----?title=The next generation of Actor Systems
+---
+### The next generation of Actor Systems
 
 @ul
 
@@ -46,11 +50,21 @@ A quick introduction to Akka Typed
 
 @ulend
 
+---
+### Show me the code
 
----?code=project/Dependencies.scala&title=Adding it to your project
++++?code=project/Dependencies.scala&title=Adding dependency
 @[4-5]
 
----?title=Attributions
++++?code=build.sbt?title=Add to your project
+@[11]
+
++++?code=src/main/scala/FirstSteps.scala&title=A simple example
+
++++?code=src/main/scala/ChatRoom.scala&title=ChatRoom
+
+---
+### Attributions
 This presentation was created using the following resources:
 
 - https://doc.akka.io/docs/akka/current/typed/index.html by Lightbend, Inc. [(licenses)](https://www.lightbend.com/legal/licenses)

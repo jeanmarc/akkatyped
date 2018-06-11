@@ -57,7 +57,7 @@ The following pages show the working examples.
 +++?code=project/Dependencies.scala&title=Adding dependency
 @[4-5]
 
-+++?code=build.sbt?title=Add to your project
++++?code=build.sbt&title=Add to your project
 @[11]
 
 +++?code=src/main/scala/FirstSteps.scala&title=A simple example

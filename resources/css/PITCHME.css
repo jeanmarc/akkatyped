@@ -5,8 +5,8 @@
 }
 
 .reveal .slides section>* {
-    margin-left: 10;
-    margin-right: 10;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .reveal code {

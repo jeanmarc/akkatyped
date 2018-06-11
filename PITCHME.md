@@ -50,10 +50,8 @@ A quick introduction to Akka Typed
 
 @ulend
 
----
-### Adding it to your project
 
-?code=project/Dependencies.scala
+---@Adding it to your project?code=project/Dependencies.scala
 @[4-5]
 
 ---

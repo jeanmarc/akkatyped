@@ -66,4 +66,4 @@ This presentation and the code in the accompanying repository is licensed [(CC B
 This presentation was created using the following resources:
 
 - https://doc.akka.io/docs/akka/current/typed/index.html by Lightbend, Inc. [(licenses)](https://www.lightbend.com/legal/licenses)
-- https://heikoseeberger.rocks/decks/20180516-welcome-akka-typed/#/ by Heiko Seeberger [(CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+- https://heikoseeberger.rocks/decks/20180516-welcome-akka-typed by Heiko Seeberger [(CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)

@@ -5,8 +5,6 @@ A quick introduction to Akka Typed
 ### Actor systems
 
 - Actor systems have been around since the mid 1970s
-@ul
-
 - Effective abstraction of units of computation that can be distributed across multiple environments                                  
 - Interaction between actors is limited to sending messages
 - Processing of messages consists of:
@@ -14,27 +12,19 @@ A quick introduction to Akka Typed
     - update internal state
     - optionally terminate                                                                           
 
-@ulend
-
 +++
 ### Actor systems (continued)
 - AKKA Actors first public release in Jan 2010: Akka 0.5
-@ul
 - Actors implement a receive function (`Any => Unit`)                                                                      
 - Changing state is done by updating internal var/vals and `become`ing a new actor that reacts differently to future incoming messages
-
-@ulend
 
 +++
 ### Actor systems (continued)
 - Drawbacks of the untyped nature of AKKA Actors
-@ul
-- No clear interface (what messages will be digested, what messages can be emitted)
-- Multiple behaviours hidden behind same interface (`become` is not visible to the world outside the actor)
-- No compile time assistance on correctness
-- Reasoning about large actor systems becomes difficult
-
-@ulend
+    - No clear interface (what messages will be digested, what messages can be emitted)
+    - Multiple behaviours hidden behind same interface (`become` is not visible to the world outside the actor)
+    - No compile time assistance on correctness
+    - Reasoning about large actor systems becomes difficult
 
 ---
 ### The next generation of Actor Systems
@@ -56,6 +46,9 @@ More info on coexistence: https://doc.akka.io/docs/akka/current/typed/coexisting
 ### Show me the code
 The following pages show the working examples.
 
+Repo available on github: https://github.com/jeanmarc/akkatyped
+Includes this presentation.
+
 +++?code=project/Dependencies.scala&title=Adding dependency
 @[4-5]
 
@@ -68,6 +61,8 @@ The following pages show the working examples.
 
 ---
 ### Attributions
+This presentation and the code in the accompanying repository is licensed [(CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+
 This presentation was created using the following resources:
 
 - https://doc.akka.io/docs/akka/current/typed/index.html by Lightbend, Inc. [(licenses)](https://www.lightbend.com/legal/licenses)

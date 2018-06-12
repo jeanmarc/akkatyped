@@ -3,9 +3,11 @@ A quick introduction to Akka Typed
 
 ---
 ### Actor systems
-@ul
+
 
 - Actor systems have been around since the mid 1970s
+@ul
+
 - Effective abstraction of units of computation that can be distributed across multiple environments                                  
 - Interaction between actors is limited to sending messages
 - Processing of messages consists of:
@@ -19,8 +21,8 @@ A quick introduction to Akka Typed
 ### Actor systems (continued)
 @ul
                                     
-- AKKA Actors first public release in January 2010: Akka 0.5
-- Actors implement a (partial) receive function (`Any => Unit`)                                                                      
+- AKKA Actors first public release in Jan 2010: Akka 0.5
+- Actors implement a receive function (`Any => Unit`)                                                                      
 - Changing state is done by updating internal var/vals and `become`ing a new actor that reacts differently to future incoming messages
 
 @ulend
@@ -45,10 +47,15 @@ A quick introduction to Akka Typed
 - Akka Typed tries to remove the drawbacks
 - While keeping the high performance
 - And providing interoperability
-    - Typed Actors can interact with Untyped Actors and the other way too
-    - Typed Actor Systems can be used as Untyped Actor Systems
-
+    - Typed Actors can interact with Untyped Actors
+    - Untyped Actors can interact with Typed Actors
+    - Untyped Actor Systems can be converted to Typed Actor Systems
 @ulend
+```scala
+val system = akka.actor.ActorSystem("UntypedToTypedSystem")
+val typedSystem: ActorSystem[Nothing] = system.toTyped
+```
+More info on coexistence: https://doc.akka.io/docs/akka/current/typed/coexisting.html 
 
 ---
 ### Show me the code

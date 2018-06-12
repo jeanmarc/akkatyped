@@ -13,5 +13,6 @@
 }
 
 .reveal code {
+    background-color: rgb(43,43,43);
     font-size: 90%;
 }
